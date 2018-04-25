@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Día Mundial de la Bicicleta</title>
+ 
+ <!-- grupo CSS-->
+ <link rel="stylesheet" href="css/Tema1-app3.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+ <!-- Start WOWSlider.com HEAD section -->
+ <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+ <script type="text/javascript" src="engine1/jquery.js"></script>
+ <!-- End WOWSlider.com HEAD section -->
+
+ <!-- grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!-- <script src="js/acciones.js"></script> -->
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/draisiana.jpg','imagenes/moderna.png')">
+ 
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Día Mundial de la Bicicleta</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Imagen conmemorativa:</h1>
+      <div align="center">
+       <img src="imagenes/Bici.jpg" width="50%" height="50%">
+      </div>
+     </div>
+    </div>
+    <div>
+     <ul dat-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Historia de la Bicicleta</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Utilización como medio de Transporte</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Tipos de Bicicletas</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>5 Marcas Importantes de Bicicletas</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿Por que se celebra el Día Mundial de la Bicicleta?</h2>
+      </a>
+     </li>
+     </ul>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+      <img src="imagenes/icon.png" width="46" height="46">
+     </div>
+     <div>
+      <h4>Aplicación Tres</h4>
+      <h4>ULISES MIRÓ GARCÍA</h4>
+     </div>
+    </div>
+    </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Historia de la Bicicleta</h1>
+     </div>
+     <div data-role="content" align="justify">
+      <div>
+       <p>
+       <h4>En Francia, en 1790, aparece el celerífero, al cual podríamos considerar como el antepasado de la bicicleta. Lo inventó Sivrac.
+       Carlos Federico Drais (1785-1851), que así se llamaba el agrimensor alemán, fue visto por las calles de Mannheim montado sobre su nueva máquina, la draisiana, a la cual hacía correr con fuertes enviones dados alternativamente por cada pie. Pero tampoco, la draisiana fue tomada en serio. Los peatones se desternillaban de risa al ver semejante cabalgadura.</h4>
+       <h4>Al francés Michaux o al alemán Fischer de Schweinfurt se atribuye haber perfeccionado la máquina en 1855. Se introdujo una novedad que consistía en un doble pedal dispuesto sobre la rueda delantera, lo que permitía convertir la propulsión por medio de los pies, en un movimiento continuo impulsado por los pedales.</h4>
+       <h4>El francés Sargent pensó que podría equilibrar más regularmente esta curiosa máquina y construyó las dos ruedas iguales; pero al inglés Starley , se le atribuye el mérito de haberla hecho más veloz, más liviana y menos’’ embarazosa, fijando los pedales el el centro y sobre un cuadro rígido.</h4>
+       <h4>La creación de los neumáticos fue obra de un joven llamado Dunlop, hijo de un veterinario inglés. Gran entusiasta del ciclismo, Dunlop trató de eliminar las sacudidas producidas por el vehículo e ideó un sistema que consistía en rodear las ruedas con pequeñas almohadillas llenas de aire. Al cabo de muchos experimentos llegó a obtener un tubo de caucho, delgado y flexible, que podía llenarse de aire comprimido y colocarse alrededor de las ruedas. Con ayuda de su padre, en 1890 fabricó los primeros neumáticos.</h4>
+       </p>
+        <div align="center">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sustitucion1','','imagenes/draisiana.jpg',1)"><img src="imagenes/celerifero.jpg" width="30%" height="45%" id="Sustitucion1"></a>
+        <br>
+        <br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sustitucion2','','imagenes/moderna.png',1)"><img src="imagenes/ruedalta.jpg" width="30%" height="35%" id="Sustitucion2"></a>
+        </div>
+       </div>
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+      <img src="imagenes/icon.png" width="46" height="46">
+     </div>
+      <h4>Aplicación Tres, UMG</h4>
+     </div>
+    </div>
+    
+    
+    
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Utilización como medio de Transporte</h1>
+    </div>
+    <div data-role="content" align="justify">
+     <div>
+     <p>
+      <h1>Conoce las ventajas de usar la bicicleta como medio de transporte:</h1>
+<h2>Ventajas para tu salud</h2>
+<h4>-El uso de una bicicleta puede mejorar tu salud física y emocional.</h4>
+<h4>-Ayuda al funcionamiento del sistema cardiovascular, tonifica los músculos y mejora la capacidad pulmonar.</h4>
+<h4>-Reduce los niveles de colesterol en la sangre.</h4>
+<h4>-Ayuda a mejorar la coordinación motriz.</h4>
+<h4>-Es un excelente ejercicio aeróbico que combate los riesgos de sufrir sobrepeso y obesidad.</h4>
+<h4>-Reduce los niveles de estrés y mejora el estado de ánimo.</h4>
+<h4>-Puede ser una excelente alternativa para unir a las familias en torno al deporte.</h4>
+<h2>Ventajas para el cuidado del medio ambiente</h2>
+<h4>Una ciudad con alta circulación de bicicletas por sus calles es, definitivamente, una ciudad amigable con el medio ambiente, pues lo ayuda a reducir los niveles de contaminación ambiental y sus niveles de monóxido y dióxido de carbono, hidrocarburos y otras partículas que favorecen la contaminación del aire.</h4>
+<h4>Gracias a estos beneficios es que muchas ciudades en el mundo le apuntan al uso masivo de la bicicleta como alternativa para la movilización de personas. En ciudades como Santiago de Chile, Bogotá, Río de Janeiro, Lima y Medellín, los gobiernos promueven programas de desarrollo de políticas públicas que favorezcan la conducción de bicicletas, como la construcción de ciclorrutas, alquiler de bicicletas públicas y otros novedosos proyectos que han logrado un aumento significativo del uso de los vehículos de dos ruedas en el continente.</h4>
+<h4>El transporte en bicicleta es una práctica totalmente ecológica porque promueve la disminución de la misión de gases tóxicos para el ambiente y la adopción de estilos de vida saludables para las personas</h4>
+<h2>Ventajas para el cuidado de la economía familiar</h2>
+<h4>Al usar la bicicleta, también estarás ahorrando muchísimo dinero, pues no gastarías en impuestos, gasolina, parqueaderos, peajes, gastos de mantenimiento, pago de pasajes de servicio de transporte público, etc.</h4></div>
+		<div align="center">
+         <img src="imagenes/uso.jpg" width="25%" height="35%">
+        </div>
+     </p>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="imagenes/icon.png" width="46" height="46">
+    </div>
+     <h4>Aplicación Tres, UMG</h4>
+    </div>
+   </div>
+   
+     
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Tipos de Bicicletas</h1>
+    </div>
+    <div data-role="content" align="justify">
+     <div>
+      <p>
+      <br>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/bici_mtb.jpg" alt="bici_mtb" title="bici_mtb" id="wows1_0"/></li>
+		<li><img src="data1/images/bici_ruta.jpg" alt="bici_ruta" title="bici_ruta" id="wows1_1"/></li>
+		<li><img src="data1/images/bici_hibrida.jpg" alt="bici_hibrida" title="bici_hibrida" id="wows1_2"/></li>
+		<li><img src="data1/images/bici_urbana.jpg" alt="bici_urbana" title="bici_urbana" id="wows1_3"/></li>
+		<li><img src="data1/images/bici_plegable.jpg" alt="bici_plegable" title="bici_plegable" id="wows1_4"/></li>
+		<li><img src="data1/images/bici_fixie.jpg" alt="bici_fixie" title="bici_fixie" id="wows1_5"/></li>
+		<li><img src="data1/images/bici_cruiser.jpg" alt="bici_cruiser" title="bici_cruiser" id="wows1_6"/></li>
+		<li><img src="data1/images/bici_mbx.jpg" alt="bici_mbx" title="bici_mbx" id="wows1_7"/></li>
+		<li><img src="data1/images/bici_touring.jpg" alt="bici_touring" title="bici_touring" id="wows1_8"/></li>
+		<li><img src="data1/images/bici_electrica.jpg" alt="bici_electrica" title="bici_electrica" id="wows1_9"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/bici_utilitaria.jpg" alt="http://wowslider.com/" title="bici_utilitaria" id="wows1_10"/></a></li>
+		<li><img src="data1/images/bici_fat.jpg" alt="bici_fat" title="bici_fat" id="wows1_11"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="bici_mtb"><span><img src="data1/tooltips/bici_mtb.jpg" alt="bici_mtb"/>1</span></a>
+		<a href="#" title="bici_ruta"><span><img src="data1/tooltips/bici_ruta.jpg" alt="bici_ruta"/>2</span></a>
+		<a href="#" title="bici_hibrida"><span><img src="data1/tooltips/bici_hibrida.jpg" alt="bici_hibrida"/>3</span></a>
+		<a href="#" title="bici_urbana"><span><img src="data1/tooltips/bici_urbana.jpg" alt="bici_urbana"/>4</span></a>
+		<a href="#" title="bici_plegable"><span><img src="data1/tooltips/bici_plegable.jpg" alt="bici_plegable"/>5</span></a>
+		<a href="#" title="bici_fixie"><span><img src="data1/tooltips/bici_fixie.jpg" alt="bici_fixie"/>6</span></a>
+		<a href="#" title="bici_cruiser"><span><img src="data1/tooltips/bici_cruiser.jpg" alt="bici_cruiser"/>7</span></a>
+		<a href="#" title="bici_mbx"><span><img src="data1/tooltips/bici_mbx.jpg" alt="bici_mbx"/>8</span></a>
+		<a href="#" title="bici_touring"><span><img src="data1/tooltips/bici_touring.jpg" alt="bici_touring"/>9</span></a>
+		<a href="#" title="bici_electrica"><span><img src="data1/tooltips/bici_electrica.jpg" alt="bici_electrica"/>10</span></a>
+		<a href="#" title="bici_utilitaria"><span><img src="data1/tooltips/bici_utilitaria.jpg" alt="bici_utilitaria"/>11</span></a>
+		<a href="#" title="bici_fat"><span><img src="data1/tooltips/bici_fat.jpg" alt="bici_fat"/>12</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      <br>
+      <h3>1.-Bicicleta de Montaña (MTB)</h33>
+      <h3>2.-Bicicleta de Ruta</h3>
+      <h3>3.-Bicicleta Híbrida</h3>
+      <h3>4.-Bicicleta Urbana</h3>
+      <h3>5.-Bicicleta Plegable</h3>
+      <h3>6.-Bicicleta Fixie y single speed</h3>
+      <h3>7.-Bicicleta Cruiser</h3>
+      <h3>8.-Bicicleta MBX</h3>
+      <h3>9.-Bicicleta Touring</h3>
+      <h3>10.-Bicicleta Eléctrica</h3>
+      <h3>11.-Bicicleta Utilitaria</h3>
+      <h3>12.-Bicicleta Fat</h3>
+      <br>
+      <a href="http://labicicleta.info/tipos-de-bicicleta/" target="_self"><h2>Más información aquí</h2></a>
+     </div>
+      </p>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="imagenes/icon.png" width="46" height="46">
+    </div>
+     <h4>Aplicación Tres, UMG</h4>
+    </div>
+   </div> 
+     
+     
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>5 Marcas Importantes de Bicicletas</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>1. Giant – King Liu</h2>
+      <img src="imagenes/giant.jpg" width="15%" height="15%">
+      <h4>Nació en Taiwan en el año 1934. Liu no estaba relacionado a las bicicletas y trabajaba la mayor parte del tiempo en el campo. La decepción que sufrió luego de que un huracan se llevara gran parte de sus propiedad, lo hizo cambiar de negocio y Giant fue fundada en el año 1972.</h4>
+      <br>
+      <h2>2. Trek – Richard Burke</h2>
+      <img src="imagenes/trek.jpg" width="15%" height="15%">
+      <h4>Richard Burke en asociación con Bevil Hogg fundaron la corporación Rott para producir marcos de bicicletas. Al competir directamente con marcas mas grandes de Japon y Europa, Trek se enfoco en marcos personalizados que pronto tuvieron exito y dentro de tres años la compañia ya estaba generando ventas a gran escala.</h4>
+      <br>
+       <h2>3. Specialized – Mike Sinyard</h2>
+      <img src="imagenes/specialized.png" width="15%" height="15%">
+      <h4>En 1974 Mike Sinyard decidio vender su Volkswagen y manejar bicicleta alrededor de Europa. Al ver la demanda que tenian las bicicletas y accesorios decidio regresar a Estados Unidos y empezar a vender partes de bicicletas Cinelli. Progresivamente las ventas aumentaron y la marca Specialized fue creada para vender llantas. Posteriormente fueron incluidas las bicicletas con modelos creados en Japon. La calidad Japonesa inspiro la calidad de la que actualmente gozan las bicicletas Specialized.</h4>
+      <br>
+      <h2>4. Cannondale – Joe Montgomery, Jim Catrambone, Ron Davis y Murdock MacGregor</h2>
+      <img src="imagenes/cannondale.jpg" width="15%" height="15%">
+      <h4>Empezaron vendiendo mochilas y tiendas para campamentos. La marca crecio debido a su constante innovación en tecnologias de diseño por computadora, marcos de aluminio y fibra de carbono. Sin embargo durante los 90’s la marca fue declarada en bancarota debido a su desafortunada incursión en la venta de motocicletas. La compañia fue luego adquirida por el grupo Pegasus que tambien tiene participación en las marcas Schwinn, Mongoose, Roadmaster, y GT.</h4>
+      <br>
+      <h2>5. Santa Cruz – Rob Roskopp, Mike Marquez y Rich Novak</h2>
+      <img src="imagenes/santacruz.png" width="15%" height="15%">
+      <h4>En 1993 Rob Roskopp profesional del skateboard y Rich Novak creador de la marca Santa Cruz skateboards se juntaron con Mike Marquez para crear el primer modelo de bicicleta bajo la marca Santa Cruz. El primer prototipo fue creado en 1994 con el modelo doble suspension Tazmon.</h4>
+    </div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="imagenes/icon.png" width="46" height="46">
+    </div>
+     <h4>Aplicación Tres, UMG</h4>
+    </div>
+   </div>
+      
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>¿Por qué se celebra el Día Mundial de la Bicicleta</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>DÍA MUNDIAL DE LA BICICLETA</h2>
+     </div>
+     	<div align="justify">
+        <p>
+        <h4>El 19 de abril, se celebra el >Día Mundial de la Bicicleta con el objetivo de promocionar este medio de transporte y llamar la atención sobre los derechos de los ciclistas.</h4>
+<h4>Se celebra este día, porque el 19 de abril de 1943 el doctor Albert Hofmann, padre del LSD, ingirió a propósito 250 µg de LSD. Tras ingerir la sustancia, Hofmann sintió que le costaba hablar de forma inteligible y pidió a su asistente de laboratorio, que estaba al tanto del experimento, que le acompañase en su viaje a casa en bicicleta, pues, por las restricciones del período de guerra, no había automóviles disponibles.</h4>
+<h4>Durante el viaje a casa, el estado de Hofmann se agravó, posteriormente escribiría en su diario que todo lo que había en su campo de visión ondulaba, distorsionado como una imagen en un espejo cóncavo. Aunque avanzaba velozmente, tuvo la sensación paradójica de que permanecía inmóvil. Cuando llegó a casa, llamó a un doctor y pidió a su vecina algo de leche, creyendo que le ayudaría a recuperarse.</h4>
+<h4>Cuando llegó el médico, no encontró ningún síntoma físico anormal, salvo las pupilas extremadamente dilatadas. Tras pasar varias horas aterrorizado, convencido de que un demonio había poseído su cuerpo, de que su vecina era una bruja y de que el mobiliario de su casa le amenazaba, el doctor Hofmann pensó que había enloquecido por completo.</h4>
+<h4>Durante su ‘viaje’, las impresiones acústicas (como el ruido de un automóvil que pasaba) se transformaban en imágenes. Hofmann, al día siguiente despertó fresco y con la mente clara, aunque con cierto cansancio corporal. Desayunó con una sensación de bienestar y vida renovada, y encontró la comida deliciosa. Mientras caminaba por el jardín, notó que todos sus sentidos “vibraban con una sensibilidad superior”, que duró durante todo el día.</h4>
+<h4>Desde entonces, todos los años, el 19 de Abril en todo el mundo la gente coge su bici para rememorar aquel “primer viaje” en bicicleta del doctor Hofmann.</h4>
+<h4>En la actualidad, existen unas 800 millones de bicicletas en el mundo y son utilizadas como medio de transporte principal o como vehículo de ocio. De cara al cuidado de las personas representa un completo ejercicio físico mientras que para el medio ambiente, su uso significa una disminución de las emisiones de CO2 a la atmósfera y una contribución para frenar el cambio climático.</h4>
+<h4>En este día se celebran circuitos en la calle, desfiles de bicicletas, conciertos verdes, competencias de ensayos, carteles en las escuelas y plantaciones de árboles. ¿A qué esperas en coger tu bicicleta y salir a la calle?</h4>
+        </p>
+         <div align="center">
+          <img src="imagenes/grillo_bici.jpg" width="30%" height="40%">
+         </div>
+        </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="imagenes/icon.png"width="46" height="46">
+    </div>
+     <h4>Aplicación Tres, UMG</h4>
+    </div>
+   </div>
+</body>
+</html>
